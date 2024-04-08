@@ -1,0 +1,119 @@
+
+.html{
+display: flex;
+justify-content: center;
+font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+}
+.flex{
+  display: flex;
+  gap:2em;
+  
+}
+.normal{
+  text-decoration: none;
+}
+.strike{
+  text-decoration: line-through;
+}
+.Heading{
+  font-size: 3rem;
+}
+input[type=text]{
+  background-color: #d6f0d6;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  /* margin: 8px 70px; */
+}
+.box{
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 300px; /* Adjust width as needed */
+  height: 3em; /* Adjust height as needed */
+border-bottom: solid black;
+
+max-width: fit-content;
+
+}
+#text{
+  text-align: center;
+}
+input[type=text]:focus{
+  box-shadow: none;
+  border: none;
+  outline: solid 1px rgb(134, 134, 134);
+  box-shadow: 0 8px 16px 0 rgba(122, 122, 122, 0.103), 0 6px 20px 0 rgba(180, 180, 180, 0.089);
+  transition: 0.2s;
+}button{
+  background-color:rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(158, 157, 157);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.item{
+  display: flex;
+  gap: 2vw;
+  font-size: 50px;
+  background-color: #b1adad2d;
+  padding-right: 2%;
+  padding-left: 1%;
+padding-top: none;
+  border-radius: 15px;
+  text-align: center;
+
+}
+.fle{
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: #000000 solid;
+  padding: 5em;
+  border-radius: 25px;
+  background: rgb(255,255,255);
+  background: linear-gradient(145deg, rgba(255,255,255,0.5550595238095238) 0%, rgba(199,227,199,0.4738270308123249) 52%, rgba(213,248,255,0.2682247899159664) 100%); 
+background-size: cover; 
+}
+.hover{
+ cursor:pointer;
+}
+input[type="checkbox"] {
+  display: none;
+
+  background-color: aquamarine;
+}
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color:#000000;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid #d6f0d6;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked + .custom-checkbox::after {
+  display: block;
+  background-color: #b1adad2d;
+}
+.delete{
+  width:1em;
+}
